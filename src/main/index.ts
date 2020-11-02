@@ -11,7 +11,8 @@ let mainWindow: BrowserWindow | null;
 
 async function createMainWindow() {
   const win = new BrowserWindow({
-    webPreferences: { nodeIntegration: true }
+    webPreferences: { nodeIntegration: true },
+    icon: path.join(__static, 'images/electron.ico'),
   });
 
   win.on('closed', () => {
@@ -37,7 +38,7 @@ async function createMainWindow() {
       formatUrl({
         pathname: path.join(__dirname, 'index.html'),
         protocol: 'file',
-        slashes: true
+        slashes: true,
       })
     );
   }
