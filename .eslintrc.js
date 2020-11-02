@@ -49,9 +49,5 @@ module.exports = {
         '@typescript-eslint/no-var-requires': 0
       }
     }
-  ],
-
-  globals: {
-    __static: true
-  }
+  ]
 };

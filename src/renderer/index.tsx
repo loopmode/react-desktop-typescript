@@ -1,4 +1,6 @@
 import 'react-hot-loader';
+import './index.scss';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
