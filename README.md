@@ -2,6 +2,16 @@
 
 Electron app boilerplate for typescript react projects.
 
+## Notes
+
+- App icon for production build (installer, OS links) is `build/icon.ico` (electron-builder convention)
+- App icon for the active window is in `static/images/app.ico` (same icon, in electron-webpack static folder)
+- There is `src/renderer/utils/static` with a `getStatic` function. Use it to access static content
+- Font aliases to static folder are in place, check `src/index.scss` for usage
+- Check README in `static/fonts` for instructions on how to embed additional fonts
+
+---
+
 ## electron-webpack-quick-start
 
 > A bare minimum project structure to get started developing with [`electron-webpack`](https://github.com/electron-userland/electron-webpack).
