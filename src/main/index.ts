@@ -12,7 +12,7 @@ let mainWindow: BrowserWindow | null;
 async function createMainWindow() {
   const win = new BrowserWindow({
     webPreferences: { nodeIntegration: true },
-    icon: path.join(__static, 'images/electron.ico'),
+    icon: path.join(__static, 'app.ico'),
   });
 
   win.on('closed', () => {
